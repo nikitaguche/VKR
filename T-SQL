@@ -1,0 +1,18 @@
+CREATE TABLE [dbo].[Words] (
+    [ID]          INT            IDENTITY (1, 1) NOT NULL,
+    [MessageName] NVARCHAR (50)  COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+    [Line]        NVARCHAR (10)  COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+    [SubLine]     NVARCHAR (15)  COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+    [WordNumbers] SMALLINT       NOT NULL,
+    [SubAdress]   SMALLINT       NOT NULL,
+    [NumWord]     SMALLINT       NOT NULL,
+    [Coment]      NVARCHAR (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+    [NameParam]   NVARCHAR (25)  COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+    [LBit]        SMALLINT       NOT NULL,
+    [RBit]        SMALLINT       NOT NULL,
+    [PriemnikRus] NVARCHAR (15)  COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+    [PriemnikEng] NVARCHAR (15)  COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+    [NewTable]    BIT            NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
